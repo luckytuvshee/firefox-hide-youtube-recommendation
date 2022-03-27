@@ -1,0 +1,17 @@
+{
+  "description": "Hide and show YouTube recommendation section",
+  "manifest_version": 2,
+  "name": "Hide YouTube recommendation",
+  "version": "1.0",
+  "homepage_url": "https://github.com/luckytuvshee/firefox-hide-youtube-recommendation",
+  "icons": {
+    "48": "icons/explore.svg"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["hide.js"]
+    }
+  ]
+}
